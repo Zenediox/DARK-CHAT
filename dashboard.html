@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+  <aside class="sidebar">
+    <h2>💬 ChatApp</h2>
+    <p>Online Users</p>
+  </aside>
+
+  <main class="chat-area">
+    <div id="messages"></div>
+
+    <div class="input-area">
+      <input id="username" placeholder="Jina lako" />
+      <input id="message" placeholder="Andika ujumbe..." />
+      <button onclick="sendMessage()">Tuma</button>
+    </div>
+  </main>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="chat.js"></script>
+</body>
+</html>
